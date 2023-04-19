@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief Submission Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="brief-form">
+        <label for="job-name">Job Name:</label>
+        <input type="text" id="job-name" name="job-name" required><br>
+
+        <label for="project-name">Project Name:</label>
+        <input type="text" id="project-name" name="project-name" required><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+
+        <label for="brief-to">Brief to:</label>
+        <select id="brief-to" name="brief-to" required>
+            <option value="">Select a team</option>
+            <option value="video">Video</option>
+            <option value="creative">Creative</option>
+            <option value="copy">Copy</option>
+        </select>
+        <div id="extra-fields"></div>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div id="output"></div>
+    <button id="copy-button" style="display:none;">Copy to Clipboard</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
