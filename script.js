@@ -10,7 +10,9 @@ document.getElementById('brief-form').addEventListener('submit', function (event
     const example3 = document.getElementById('example3') ? document.getElementById('example3').value : '';
 
     const output = `Job Name: ${jobName}\nProject Name: ${projectName}\nDescription: ${description}\nBrief to: ${briefTo}\nExample 1: ${example1}\nExample 2: ${example2}\nExample 3: ${example3}`;
-    document.getElementById('output').innerText = output;
+    const outputElement = document.getElementById('output');
+    outputElement.innerText = output;
+    outputElement.style.display = 'block';
     document.getElementById('copy-button').style.display = 'block';
 });
 
