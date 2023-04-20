@@ -30,7 +30,7 @@ input[type="text"], select {
     box-sizing: border-box;
 }
 
-button {
+.button {
     background-color: #ed1c24;
     border: none;
     color: #ffffff;
@@ -40,7 +40,7 @@ button {
     text-transform: uppercase;
 }
 
-button:hover {
+.button:hover {
     background-color: #c9141f;
 }
 
@@ -50,7 +50,6 @@ button:hover {
     padding: 10px;
     margin-top: 20px;
 }
-
 
 #copy-button {
     display: none;
