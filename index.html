@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brief Submission Tool</title>
+    <title>Brief Submission</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Brief Submission</h1>
     <form id="brief-form">
         <label for="job-name">Job Name:</label>
-        <input type="text" id="job-name" name="job-name" required><br>
-
+        <input type="text" id="job-name" name="job-name" required>
+        
         <label for="project-name">Project Name:</label>
-        <input type="text" id="project-name" name="project-name" required><br>
-
+        <input type="text" id="project-name" name="project-name" required>
+        
         <label for="description">Description:</label>
-        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
-
+        <input type="text" id="description" name="description" required>
+        
         <label for="brief-to">Brief to:</label>
         <select id="brief-to" name="brief-to" required>
-            <option value="">Select a team</option>
+            <option value="" disabled selected>Select a team</option>
             <option value="video">Video</option>
             <option value="creative">Creative</option>
             <option value="copy">Copy</option>
         </select>
+        
         <div id="extra-fields"></div>
-
-        <input type="submit" value="Submit">
+        
+        <button type="submit" class="button">Submit</button>
     </form>
+    
     <div id="output"></div>
-    <button id="copy-button" style="display:none;">Copy to Clipboard</button>
-
+    <button id="copy-button" class="button">Copy to Clipboard</button>
+    
     <script src="script.js"></script>
 </body>
 </html>
